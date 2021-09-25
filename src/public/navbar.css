@@ -1,0 +1,41 @@
+
+body.light .navbar-brand {
+  color: #000000 !important;
+}
+
+body.light .nav-item a {
+  color: #454545 !important;
+}
+
+body.light .nav-item a:hover {
+  color: #000000 !important;
+}
+
+
+.dropdown-divider {
+	color: #fff;
+	background: #fff;
+}
+
+.dropdown-item {
+  color: rgb(21, 22, 22) !important;
+	  background: rgb(255, 255, 255) !important;
+}
+
+.dropdown-item:hover {
+  background-color: #6e49c5 !important;
+}
+
+body.light .dropdown-item:hover {
+  background-color: #fff !important;
+}
+
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }

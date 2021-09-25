@@ -1,0 +1,341 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: hsl(0, 0%, 100%);
+	background: hsl(218, 28%, 13%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+}
+p {
+	line-height: 1.5;
+	font-family: "Open Sans";
+}
+h1,
+h2,
+h3 {
+	font-family: "Raleway";
+}
+#main::after {
+	content: " ";
+	display: block;
+	background: url(/images/bg-curvy-desktop.svg) no-repeat;
+	width: 100%;
+	height: 400px;
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+#main {
+	position: relative;
+	padding-bottom: 10rem;
+	/* width: 100%;
+	height: 100%; */
+	background: hsl(217, 28%, 15%);
+	z-index: 0;
+}
+#main nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 50px;
+}
+#nav-logo img {
+	height: 40px;
+}
+.menu ul {
+	display: flex;
+}
+.menu ul li a {
+	margin: 0 20px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+}
+.menu ul li a:hover {
+	border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+.model {
+	width: 90%;
+	margin: 3rem auto;
+	text-align: center;
+}
+.model-img {
+	margin: 20px;
+}
+.model-img img {
+	width: 600px;
+}
+.model-text {
+	width: 600px;
+	margin: auto;
+}
+.model-text h1,
+.content-heading,
+.access-content h1 {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1.2;
+}
+.model-text h1 {
+	margin: 2rem auto;
+}
+.model-text p {
+	width: 75%;
+	margin: auto;
+	line-height: 1.5;
+	margin-bottom: 3rem;
+}
+.model a {
+	padding: 1rem 4.5rem;
+	border-radius: 1.8rem;
+	background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+/* features */
+#features {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 2.8rem;
+}
+#features .features-box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem 1rem;
+}
+#features .box {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#features .box img {
+	padding: 2rem;
+}
+#features .box h3 {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+#features .box p {
+	width: 75%;
+	line-height: 1.5;
+}
+/* team */
+#team {
+	width: 90%;
+	display: flex;
+	margin: 100px auto;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px;
+}
+.team-img img {
+	width: 600px;
+	margin: auto;
+	padding: 30px 30px;
+}
+/* .team-content {
+	margin: auto;
+} */
+.team-content .content-heading {
+	font-size: 4rem;
+}
+.team-content .content-body {
+	font-size: 1.2rem;
+	padding: 2rem 0;
+}
+.team-content .content-link {
+	color: hsl(176, 68%, 64%) !important;
+	border-bottom: 2px solid hsl(176, 68%, 64%);
+	width: 180px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.team-content .content-link a {
+	color: hsl(176, 68%, 64%) !important;
+	font-size: 1.2rem;
+	padding-right: 5px;
+}
+.team-content .content-link img {
+	width: 20px;
+}
+/* comment */
+#comments .c-box-container .bg-quote {
+	position: absolute;
+	z-index: -1;
+	top: -10px;
+	left: 140px;
+}
+.c-box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 4rem 0;
+	position: relative;
+	z-index: 0;
+}
+.comment-box {
+	width: 350px;
+	height: 200px;
+	background-color: hsl(219, 30%, 18%);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	margin: 1.5rem;
+}
+.comment-box p {
+	margin: auto;
+}
+.comment-box .profile {
+	display: flex;
+	align-items: center;
+	margin: auto 0;
+}
+.comment-box .profile img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.comment-box .profile .profile-info {
+	margin-left: 1rem;
+}
+.comment-box .profile .profile-info h3 {
+	letter-spacing: 1px;
+	margin: 0;
+}
+.comment-box .profile .profile-info span {
+	font-size: 0.8rem;
+}
+/* access */
+#access {
+	margin: 0 auto;
+	text-align: center;
+}
+.access-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	height: 250px;
+	width: 750px;
+	background: hsl(217, 28%, 15%);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	padding: 3rem;
+	z-index: 1;
+	transform: translate(0px, 100px);
+}
+.access-content h1 {
+	margin: 0;
+	padding: 0;
+}
+.access-content p {
+	padding: 0 5rem;
+}
+.access-input {
+	padding: 1.5rem;
+}
+.access-input .email {
+	border: none;
+	outline: none;
+	border-radius: 1.5rem;
+	width: 400px;
+	padding: 0.8rem 2rem;
+	color: rgba(0, 0, 0, 0.3);
+}
+.access-input .submit {
+	margin-left: 1.25rem;
+	padding: 0.8rem 1.5rem;
+	border: none;
+	outline: none;
+	border-radius: 1.8rem;
+	color: hsl(0, 0%, 100%);
+	background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+footer {
+	margin: auto;
+	padding-top: 150px;
+	background: hsl(216, 53%, 9%);
+}
+.company-footer {
+	display: flex;
+	justify-content: center;
+	/* flex-wrap: wrap; */
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+.company-footer .company-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+.company-info ul {
+	padding: 0;
+}
+.company-info .location {
+	display: flex;
+	align-content: flex-start;
+}
+.company-info .location li:nth-child(2) {
+	padding-left: 20px;
+	width: 400px;
+}
+.contact .phone,
+.contact .email {
+	display: flex;
+	align-self: center;
+	margin-bottom: 1.25rem;
+}
+.contact .phone li:nth-child(2),
+.contact .email li:nth-child(2) {
+	padding-left: 20px;
+}
+.company-info .about li,
+.company-info .about2 li {
+	margin-bottom: 1.25rem;
+}
+.social-media i {
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	text-align: center;
+
+	padding: 10px;
+	margin-left: 1rem;
+	border: 1px solid hsl(0, 0%, 100%);
+}
+/* attri */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	padding: 20px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
